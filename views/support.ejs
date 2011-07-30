@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<title>Intalio Japan Questionnaire</title>
+	</head>
+	<table border="0" width="50%" align="center">
+		<tr>
+			<th>
+				<input type="button" value="アンケート　製品" name="newbtn" onClick="location.href='/one'" />
+			</th>
+			<th>
+				<input type="button" value="アンケート　サービス" name="newbtn" onClick="location.href='/two'" />
+			</th>
+			<th>
+				<input type="button" value="アンケート　サポート" name="newbtn" onClick="location.href='/three'" />
+			</th>
+		</tr>
+	</table>
+	<body>
+		<form name="kform" method="GET" action="/threequestion" >
+			<table border="1" width="70%" align="center">
+				<caption>アンケートを入力してください</caption>
+				<tr>
+					<td align="left" width="30%">サポートの満足度</td>
+					<td width="70%">
+						<input type="radio" name="satisfy" value="1">大変満足<br>
+						<input type="radio" name="satisfy" value="2">満足<br>
+						<input type="radio" name="satisfy" value="3" checked="checked">普通<br>
+						<input type="radio" name="satisfy" value="4">不満<br>
+						<input type="radio" name="satisfy" value="5">大変不満
+					</td>
+				</tr>
+				<tr>
+					<td align="left" width="30%">サポートの対応</td>
+					<td width="70%">
+						<input type="radio" name="operator" value="1">大変満足<br>
+						<input type="radio" name="operator" value="2">満足<br>
+						<input type="radio" name="operator" value="3" checked="checked">普通<br>
+						<input type="radio" name="operator" value="4">不満<br>
+						<input type="radio" name="operator" value="5">大変不満
+					</td>
+				</tr>
+				<tr>
+					<td align="left" width="30%">サポートに期待する事</td>
+					<td width="70%">
+						<textarea name="hoping" id="hoping" cols=80 rows=3></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td align="left" width="30%">あなたの年齢</td>
+					<td width="70%">
+						<input type="radio" name="age" value="1">0-18歳<br>
+						<input type="radio" name="age" value="2">19-30歳<br>
+						<input type="radio" name="age" value="3"checked="checked">31-40歳<br>
+						<input type="radio" name="age" value="4">41-50歳<br>
+						<input type="radio" name="age" value="5">51-60歳<br>
+						<input type="radio" name="age" value="6">61-70歳<br>
+						<input type="radio" name="age" value="7">71歳以上
+					</td>
+				</tr>
+				<tr>
+					<td align="left" width="30%">あなたの性別</td>
+					<td width="70%">
+						<input type="radio" name="sex" value="1" checked="checked">男性<br>
+						<input type="radio" name="sex" value="2">女性
+					</td>
+				</tr>
+			</table>
+			<table width="70%" border="0" align="center">
+				<tr>
+					<td align="center">
+						<input type="submit" value="登録" id="registerbtn" name="registerbtn">
+						<input type="reset" value="リセット" id="resetbtn" name="resetbtn" />
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<title>Intalio Japan Questionnaire</title>
+	</head>
+	<table border="0" width="50%" align="center">
+		<tr>
+			<th>
+				<input type="button" value="アンケート　製品" name="newbtn" onClick="location.href='/one'" />
+			</th>
+			<th>
+				<input type="button" value="アンケート　サービス" name="newbtn" onClick="location.href='/two'" />
+			</th>
+			<th>
+				<input type="button" value="アンケート　サポート" name="newbtn" onClick="location.href='/three'" />
+			</th>
+		</tr>
+	</table>
+	<body>
+		<form name="kform" method="GET" action="/onequestion" >
+			<table border="0" width="50%" align="center">
+				<caption>アンケート実行結果</caption>
+				<tr>
+					<td width="１０0%" align="center">
+						<%= message %>
+					</td>
+				</tr>
+			</table>
+			<br/>
+		</form>
+	</body>
+</html>
